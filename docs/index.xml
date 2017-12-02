@@ -11,12 +11,14 @@
     
     
     <item>
-      <title>test</title>
-      <link>http://whytrustpaper.com/docs/my-new-doc/</link>
+      <title>What is a blockchain?</title>
+      <link>http://whytrustpaper.com/docs/whatisablockchain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://whytrustpaper.com/docs/my-new-doc/</guid>
-      <description>yoyo</description>
+      <guid>http://whytrustpaper.com/docs/whatisablockchain/</guid>
+      <description>**What is the blockchain and why is it so important.
+To understand blockchain and its use on cryptocurrencies lets back up a little, maybe a few hundred years. Imagine a prosperous medieval walled city called Hwen. Hwen is fully self sustained and has people from all backgrounds, from farmers to blacksmiths to builders to artists to folks who govern, Knights who protect etc.
+By the instruction of new Lord Emeric Jeanin, Hwen uses Gold as a method of transaction.</description>
     </item>
     
   </channel>

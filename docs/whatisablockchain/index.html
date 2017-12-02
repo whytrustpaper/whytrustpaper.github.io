@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="generator" content="Hugo 0.31.1" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> What is a blockchain? </title>
+
+  
+  <meta name="description" content="Understand blockchain and why it&#39;s so important"> 
+  
+  
+  
+  
+  
+
+    
+
+  <meta name="author" content="Why Trust Paper">
+
+
+  <meta property="og:title" content="What is a blockchain?" />
+<meta property="og:description" content="Understand blockchain and why it&#39;s so important" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://whytrustpaper.com/docs/whatisablockchain/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  
+  
+
+  <link rel="canonical" href="http://whytrustpaper.com/docs/whatisablockchain/">  
+
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAfMklEQVR4Xu3deah1VfkH8MfQNC38SeaIhSVSWKYlDWYpNphDg5RTooZp/n5lmRqOTWQjZGWGaFZEgkmDYaVZlmhkoQ1aYYoVIpKKRUU55ID+WG6v7/W+Z9hneK7rvuuz/yl8z3nu2s855/vZe+1prYc/stvDsdZaEbFWPPK/ff7/2NfGqnpjXzvkbw99Xym9ZJyDXjvV31007rn0oazbo+OdZDzjXrtQc25jXPq59+jD2DEO+j4NqTuu1uL1XO21I/o7U92FnnQfoUUH1sQOrAWAxeHXI/hGhtEgQAGwauMCAGtiiFinldsBADxubwIA3d5Vjz6M27oe+O8AWLlRYeRrYgcAAIAB03UAWDXNuCb+7K2TDjw6O20KyBTQY1M0j221AwAAIrKFDtgDsAdgD2DkwfQWYsA6ttoBAAAAAABoNf+aX28AAAAAAGg+CFttAAAAAAAAtJp/za83AAAAAAA0H4StNgAAAAAAAFrNv+bXGwAAAAAAmg/CVhsAAAAAAACt5l/z6w0AAAAAAM0HYasNAAAAAACAVvOv+fUGAAAAAIDmg7DVBgAAAAAAQKv51/x6AwAAAABA80HYagMAAAAAAKDV/Gt+vQEAAAAAoPkgbLUBAAAAAADQav41v94AAAAAANB8ELbaAAAAAAAAaDX/ml9vAAAAAABoPghbbQAAAAAAALSaf82vNwAAAAAANB+ErTYAAAAAAABazb/m1xsAAAAAAJoPwlYbAAAAAAAAreZf8+sNAAAAAADNB2GrDQAAAAAAgFbzr/n1BgAAAACA5oOw1QYAAAAAAECr+df8egMAAAAAQPNB2GoDAAAAAACg1fxrfr0BAAAAAKD5IGy1AQAAAAAA0Gr+Nb/eAAAAAADQfBC22gAAAAAAAGg1/5pfbwAAAAAAaD4IW20AAAAAAAC0mn/NrzcAAAAAADQfhK02AAAAAAAAWs2/5tcbAAAAAACaD8JWGwAAAAAAAK3mX/PrDQAAAAAAzQdhqw0AAAAAAIBW86/59QYAAAAAgOaDsNUGAAAAAABAq/nX/HoDAAAAAEDzQdhqAwAAAAAAoNX8a369AQAAAACg+SBstQEAAAAAANBq/jW/3gAAAAAA0HwQttoAAAAAAABoNf+aX28AAAAAAGg+CFttAAAAAAAAtJp/za83AAAAAAA0H4StNgAAAAAAAFrNv+bXGwAAAAAAmg/CVhsAAAAAAACt5l/z6w0AAAAAAM0HYasNAAAAAACAVvOv+fUGAAAAAIDmg7DVBgAAAAAAQKv51/x6AwAAAABA80HYagMAAAAAAKDV/Gt+vQEAAAAAoPkgbLUBAAAAAADQav41v94AAAAAANB8ELbaAAAAAAAAaDX/ml9vAAAAAABoPghbbQAAAAAAALSaf82vNwAAAAAANB+ErTYAAAAAAABazb/m1xsAAAAAAJoPwlYbAAAAAAAAreZf8+sNAAAAAADNB2GrDQAAAAAAgFbzr/n1BgAAAACA5oOw1QYAAAAAAECr+df8egMAAAAAQPNB2GoDAAAAAACg1fxrfr0BAAAAAKD5IGy1AQAAAAAA0Gr+Nb/eAAAAAADQfBC22gAAAAAAAGg1/5pfbwAAAAAAaD4IW20AAAAAAAC0mn/NrzcAAAAAADQfhK02AAAAAAAAWs2/5tcbAAAAAACaD8JWGwAAAAAAAK3mX/PrDQAAAAAAzQdhqw0AAAAAAIBW86/59QYAAAAAgOaDsNUGAAAAAABAq/nX/HoDAAAAAEDzQdhqAwAAAAAAoNX8a369AQAAAACg+SBstQEAAAAAANBq/jW/3gAAAAAA0HwQttoAAAAAAABoNf+aX28AAAAAAGg+CFttAAAAAAAAtJp/za83AAAAAAA0H4StNgAAAAAAAFrNv+bXGwAAAAAAmg/CVhsAAAAAAACt5l/z6w0AAAAAAM0HYasNAAAAAACAVvOv+fUGAAAAAIDmg7DVBgAAAAAAQKv51/x6AwAAAABA80HYagMAAAAAAKDV/Gt+vQEAAAAAoPkgbLUBAAAAAADQav41v94AAAAAANB8ELbaAAAAAAAAaDX/ml9vAAAAAABoPghbbQAAAAAAALSaf82vNwAAAIDyHbjn3oj//b+Ib3xjtlB46UsjfvCDiI03nq3Omvrue+6JOPLIiPPPn20N9Xm2/j36bgAAAAAAmEuY9CoCgF5tWq4XAQAAAADAcuVNBACWr9c9/hIAAAAAAPSIijm9BABzauR8ygAAAAAAwHzSpE8VAPTp0rK9BgAAAAAAli1wTAEtX6v7/CUAAAAAAOiTFfN5jT2A+fRxTlUAAAAAAGBOcdKjDAB6NGn5XgIAAABgngDstFPExRdHbLLJ8v2KV9JfAkBVnxYAAACAeQLwrGdF/PCHEc97XlU/9GoGA4BqPooyEAAAAAAAWL5QAsDy9brHXwIAAAAAgB5RMaeXAGBOjZxPGQAAAAAAmE+a9KmSDcD990f84hcRF14Y8fOfR9xwQ8R//9uNbKONuqm5nXeOeN3rIl7+8oinPrXPqKd7zUMPRdx2W8RvfxtxzTXduG6/PeLGGx9fr4zrOc+JeOYzI1784ohXvCLihS+M+J//me7vTvAuAAAAAMsBwLXXRrz+9RF33jnBzzO6g8mXXhqx446r3vf3v0fss0/E1VdPVmvpq9/2tohzz41Yf/3lqV3+ShYAd98dcfbZEZ/5TMQdd/Try3rrRRx7bMQxx0Rsumm/94x71cMPR9x8c8R550V85SsRt9467h3D//0FL4g44oiI/feP2Gyz6euMeCcAAACA5QDgrLMi3v3uyX/Eb3pTFyZPe9ryhHQmLhkAPP3pHYQlKK+/fvL+lneUcP3SlzpUH7k1+BRLCf7y9z/ykYjvfS/igQemKDLkLQWqo46KOOGEiC22mF9dB4HX6j7wRz708r+lt0v/2+J/X/L/e722lFyoP6LW4teMq/vIMOdUa+Df7dGHsWMc1MchdcfVGtmbEf2dpO68bgc96Cygu+6KOOywblpi0uXzn++2UBcvmSGdWXveAHz/+90ZVyUcF6Z5Ju3vwutLyJ5zTsQhh0yOQNn7OO20iM9+dr7Bv3RdylRR2cM5+OCIddeddk0f9z57AACwB5C9B1DmoffcM+KWWyb70Zat/ssuiyj3vgfA43tQrrfYd99ui3teW9sF7/Ish+c/v//nVKZ7yt7H5Zf3f8+srzz00A6bsvcz4wIAAAAgG4CvfjXiHe+Y/Kf62tdGfPObqx8MzNxKz6w9zz2AybvZ7x1lb+KMM/ptYZfwL3sMV13Vr/Y8X7Xrrt3DizbffKaqAAAAAOYJwFZbddMS223X/TBnOej58Y9HnHLK6j/wzJDOrD1rP2aKup5vHrbXtfTt//hHxEEHRfz4xz0LJ7xsDggAAAAAmCcA5Xd+xRUR5cdZlr/8JWKvvSJuummyBChBVM7+KacsLl0yQzqz9koAoIxxGLwLn8ODD0Z84hMRH/7wZJ9pxqtPPjniox+NWHvtqaoDAAAAyATgggu6LcVJl3KO+kUXRTzjGQCYtHezvr7MsZcDwuXA8KDl97/vjumUc/yf6KVsKHzrWxF77DHVSAAAAABkAVAuSjr66O5c+0mXsmVXtkQHnZaYuZWeWXul7AEccEB3Dv8GG6z+qZWt/xNP7A7C1rK8+c0RX/taxIYbTjwiAAAAAFkAlIOEe+/dXY06ybLOOt3ZPwvTSKaABnfvwAMjTj+9Oze+bI0ff3xE2eOadSlnXZWzgTbeePVKf/1rd73AdddN/1e23bYDpkzv3XdfxOc+F3HqqdPXK9+Xcu1BudBwwgUAAABAFgDlttAlLCZdyimOZfpn2EU/mVvpmbXnuQcwCMlpr7Ze+vmMAmDaz3Tx31h6bcff/hZRLvj75S8n/aasev1xx0V8+tMTHwsAAAAAkAFAuZ9L+VGeeebkP+pxP+bMkM6sPU8ABl1wV87MeeMbZz8tcxgA5WrfsqX+yU9O/pkufkfZuyh7hgtLuYitnH769a9PX3fUMaMRVQEAAABkALDNNtNPFSwNCFNAq0fYoJCe5ZTbxX9hGAD/+U933n/ZO5tlWXyW2EKdk07qtuCnXfqevrqkPgAAAIAMAO69t9sanfQq1R126Oaft9xyeBRkbqVn1p7nHsCgkJ7loHsfAOYx/1+mrspVw7vs8vjPd1YASrWyB1GAmmABAAAAMG8AfvKTiEsume5Mkfe8p3vfqPO6M0M6s3Y2AKX+PIJ02B5AudlbOf1zljt8Dnti3LRXiy8O+3J20qc+NUH8eyKYm8G5GVz3HZjXzeDKz6+ciVJuJzDNQb1yTvdb3zr6R5wZ0pm1VzoAV14ZsdtuEwXsai/OBGDQ7b3HjNYegD0AewDzBqBclFN28yed/ikPKylnmWy9NQDGxeywrfTMPYBvfztiv/3GjWz0v2cCMOzeUSNGBAAAAGDeAEwbEYcfHlGeGzDuVr+ZW+mZtVf6HsA8pmkyARh1+uqQ7yQAAACAWgAod3csFzeNWzJDOrM2ACIyAei7B7no+wUAAACgBgCGBcMgDDJDOrM2AHIBmOQ79Oj3CgAAAEANAExyAC8zpDNrAwAAsz/KcMDjEAc9+m+SxwE+diZM+YZ6JGSvR2OO69PAfx/S33G1Bp6ptOgxnov/feRrRzxGc55nAY2bwhn07+XeMOUYQJ8lM6QzawOgz6c7/WvsASx69u4koQKAJc8t7gHhuP4CoP8PudzzpzxEZvvt+70nM6QzawOg3+c77asAAIDV9rDGBbXrAOZ/HcCkP+Ddd48opxiWh373WTJDOrM2APp8utO/BgAAAMCU34Encgpo0h9uZkhn1gbA9OHe552Tfo/KhPfDH9nt4e6hE/Oc+140hTBJ3V7zt44BPPJdeNzB6xFz25P0/7HXmgLq83ub62v6XAG88AczQzqzNgDm+pVZrRgAptz6cwzAMYAncg+g/JL73AMIAKsy74m4EngeF4JlEgAAAJgCmvI78EQDMMn93DO30jNr2wPIjP/hp5iO+KumgFwH4DqAGq4DmOR+7pkhnVkbAACYfe7aMQDHABYf83j0+zDrtSBP9B5A+VCXPipwWFxkhnRmbQAAAAA9DriPO3DrIPCiYxZrEAB9rwbODOnM2gCYapomUw1TQKaATAHVMAVUfuV9b+aVGdKZtQEAAHsA9gDmc6B6DbsVxMJm3rjnAZfXZYZ0Zm0AAAAAAFjjASgPdLn55un23E8+OeLjH390imtIicyQzqwNAAAAAABrPADluazlub533jk5An2e6pQZ0pm1ATAagFmvM3AdwJTngLsQzIVg8zwLqDzY5fTTI37968kB2GSTiEsvjdhxx+HvzQzpzNoAAIA9AHsAa/weQLmzZ0Hg61+fHIDyjnG3hs4M6czaAAAAAACwxgNwxRUR110X8b73TQfAkUdGfPGLEU9+8uD3Z4Z0Zm0AAAAAAGgCgAcfjHjNa6YDYIcdIsrZQFtuCYBhHVyp9wIaNU/vGECfOXxXArsSuPIrgcsewOabR+y1V8Rf/jI5AuusE3HZZRG77goAAPT//jgI3AeQUbe9fuQS2znfannElarTPsrQlcB1XwlcAHjRiyIOOSTioov6/4AXv7KcCnrKKQAAQP/vDwAAMJ/plR4QjoOy5UdCFgBe9aqIE06I+Mxn+v+AF7/yTW+KOO+8iHKTuKVL5jx9Zu2Vfgzgpz+dflpv4TM0BTTi4SUeCLPkdMwhxwvsAdS7B7D4NM4S4IceOh0Ao4IiM6Qza690AK68MmK33ab7PJcDgHHHjgaM3L2A3AvIvYDmeS+gxcF99dUR5cKu//xnutAY9pSwzJDOrL3SAbj++og994y49dbpPs/yrlGwn3HG9GeOldrDDoyPGC0AAACALADKlcB77z3dBWHlRzvsKWGZIZ1ZOxuA//434qijpr/+YiEohwXpX/8asc8+3Sm+0y6jLvQ76aSIT3962soRBxzQXUOywQa9awAAAADIAmDWQBr2lLB//Sti//27M4VmWQbdfnpWtBbGM+zW1vfcE1Guczj//FlGHjFoumNetYcBUPbkZjmwv7DG5RjR0jO8ymnDxx0XceaZ0/dlkseKPvpXAAAAAGQBUH5kn/hExKmnTvejHvaUsMygu+GGbprjllumG/NyAbDVVhHliuvttls1znnBOOx+TA8/3H2Wn/zkbL0ZNLU3j7GPu4LcMYBxF2GVDjkNtLRgbB/G9anVs4CWzvFefHE3bTDtMugpYfMCYNDzB2Y9brFcAJS/U263ceCBqzqbjVf5S7N+nqXGoDu+/upX3fdkmhsIlppbbNGBuP32E33T7AHYA7AHkLkHcNNN018QVn7Kg6ZS7r8/4uijI849d6If+8AXv//9ER/4QMSGG0bcdlvE8cdHXHDB7HWzp4DKCF/xim7Oe9ttI/75z+66iXPOmX3so6ZSSo/KKbrT3OhvYWQbbdR9dqXOk57UHVN473sjrrpq+rEffnjEWWdFrLvuRDUAAAAAZAIw6679sKeEffCDER/72EQ/9mV98XIAkLVCoy7CK9NA5UBt2YqvZSlThd/9bsSrXz3xiAAAAADME4DnPCfikku6rdKyzOPg3qCnhH372xH77TfxD37Z3rCSARj3VLZyGmjZer/22mVr58g/dMwx3QWHa6898XgAAAAAzBOAQWeQzHJB2LA543nNd08cGT3fsFIB6Hs7hXIsYN99Ix54oGdDkl5WDoKX242UDY8pFgAAAADZAMx6YHXQWSn33RfxrndFlDtI1risVAD6zqWXPbvTTov46EefuO6XYwnljKIppn4WBg0AAAAgG4BZLyAadvFQuTdN2Qqd9krjQdG1xx7d84zLwetZlmwAttmmm/K48cZZRvn495ZALdN3L3tZv5p33dVduVsORC/3Uu4YWw54v/3to58fPWZcAAAAALIBmMdpm4PO8S57AWX+dx5nvpSgKBcnfeELEe98Z0TZa5llyQagnL102GERb3nL7FiV9Zw2UO+9t9sTKHPwyzUdtN563Rk/Zf3LWUQzLAAAAACyASg/0FkuCCvvH/aUsNtvjzjooIhyo7JZlnLQ+sILI9Zfv7t9RTnGMMuSDcDCxVR//GN3VXS5T8+0Swn/cipsOY10igOp8dBDET/6UXcq55//PO0o+r2v7PmUjYFXvnKmLf+FPwYAAABgOQCY9QKiUXd6LBcPlesCSihOs+y+e8SXvxyx9dZd8Nd+JfDSq4DLufllKmaa9S/TPuX2CwXRGbem4+67I84+u9sbuOOOaT6J4e8pW/3HHtvt8W266dxqAwAAAFgOAGa9k+S4p4SV6aCyBf+hD/XfCt1ss27PpGytL1xAtBIAGHRQfGEr/MQTI/7wh/EBWfp58MER5XqKZz97/OsneUWZFrr88u5ir7JnUO4JNe1S9syOOKK7B1H5vOa8AAAAABj2ZLZH/vsKW8rZKeUq1UsvjfjZz7ot+oWt0RJ6z31ud0/7N7whYpddIp7ylBW2gmOGWyAo00Lf+U53a4Tf/W5VAJc9nB137M7hf93rUgJ1tdGVq7b/9KeIa66JKLd7+M1vIv7979UPXi98NhtvHLHzzhEveUnETjt1jxZN/B4CAAAAWJMAWLPi3NokdwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3EldwAAAAAAAJJjRvlaOwAAAAAAALXmk3Eld+D/AfhEhmLqHBsfAAAAAElFTkSuQmCC">
+
+
+  <link href="/css/font.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.legenda.css" rel="stylesheet" type="text/css">
+  <link href="/css/highlight.css" rel="stylesheet" type="text/css">
+  <link href="/css/master.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.demo.css" rel="stylesheet" type="text/css">
+
+ <link href="/css/custom.css" rel="stylesheet" type="text/css">
+
+  <script src="/js/jquery-2.1.4.min.js" type="text/javascript">
+  </script>
+
+  <script type="text/javascript" src="/js/tocbot.min.js"></script>
+</head>
+
+
+<body class="page-kube">
+  <header> <div class="show-sm">
+    <div id="nav-toggle-box">
+      <div id="nav-toggle-brand">
+        <a href="/">Why Trust Paper</a>
+      </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
+    </div>
+  </div>
+  <div class="hide-sm" id="top">
+    <div id="top-brand">
+      <figure>
+         <a href="/"> <img alt="Baseline" src="/logo.png"> </a>
+        </figure>
+    </div>
+    <nav id="top-nav-main">
+      <ul>
+       
+       
+    <li><a href="/blog/" >Blog</a></li>
+    
+    <li><a href="/docs/" >Docs</a></li>
+    
+    <li><a href="/faq/" >Faq</a></li>
+    
+      </ul>
+    </nav>
+    <nav id="top-nav-extra">
+      <ul>
+        <li>
+        </li>
+      </ul>
+    </nav>
+  </div> </header>
+  <main>
+  <div id="main">
+    <div id="hero">
+      <h1> What is a blockchain? </h1>
+      <p class="hero-lead">
+           .
+      </p>
+
+    </div> 
+    <div id="kube-component" class="content">
+    
+<nav id="contents">
+    <ol class="js-toc">
+    </ol>
+</nav>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded",
+function(){
+tocbot.init({
+
+tocSelector: '.js-toc',
+
+contentSelector: '.content',
+
+headingSelector: 'h3'
+})
+}
+);
+</script>
+
+
+
+    <p>**What is the blockchain and why is it so important.</p>
+
+<p>To understand blockchain and its use on cryptocurrencies lets back up a little, maybe a few hundred years. Imagine a prosperous medieval walled city called Hwen. Hwen is fully self sustained and has people from all backgrounds, from farmers to blacksmiths to builders to artists to folks who govern, Knights who protect  etc.</p>
+
+<p>By the instruction of new Lord Emeric Jeanin, Hwen uses Gold as a method of transaction. Gold coins in 3 denominations (small, medium and large) is used to associate value to products and services. Everyone gets paid in Gold and all transactions occur in gold.</p>
+
+<p>A farmer (Yeoman Seemannus) sells his produce and gets gold, some of which he uses to pay the butcher (Baronet Reinfrid) for meat. The palace pays maid Aledia in gold coins and Knight Bertelot in gold coins too. Each service had a pre-determined gold coin value and thus everything was fair and things running smooth.</p>
+
+<p>Given that Yeoman was a very successful farmer, he received a lot of gold coins during the end of harvest season which he then collected and used the rest of the year to pay for items and services.</p>
+
+<p>Maid Aledia received a lot of small gold coins for her work and had to carry them around when she was out shopping. Sir Bertelot had a few large gold coins that often proved problematic when shopping for small gifts for his wife. The inconvenience of having to carry heavy gold purses all day around and the problem of breaking larger coins for services of lower value was resonated time and again at all council meetings. Tired of hearing constant complains from the people, the council appointed Baron Sansum for proposing a solution.</p>
+
+<p>After a few brainstorming sessions, Sansum proposed a solution to the Lord governor Emeric which he and the council members liked and asked Sansum to implement instantly.</p>
+
+<p>The solution involved establishing a banker (Count Rankin was hired for this job); that took gold coins from each citizen of Hwen and then store it securely in the castle’s vault. Rankin was also responsible for maintaining a book (called a ledger) of every person and the gold they have submitted. Thus future transactions instead of being an exchange of physical gold was just an entry in this ledger. Aledia buying potatoes from Seemannus, ask Count Rankin the banker to reduce the balance from Aledia’s page and add the same to Seemannus’s.</p>
+
+<p>Everyone was happy with the solution in that they didn’t have to worry about storing their gold safely and not having to carry around large sums for big purchases (like Sir Bertelot had last month when he bought his horse). However, this worked for a few weeks until there were lines of people trying to ‘record’ their transaction and it wasted a lot of everyones time having to walk to Count’s desk to make an accurate note on the ledger for minor transactions. Service providers were equally annoyed as these record keeping took a lot of time where they could have been actually working and started insisting on physical gold again and refusing to serve anyone that offered to pay via ‘ledger’ transfers. Add to this there was a numerical error that was caught early; but not without a lot of diatribes.</p>
+
+<p>Sansum was summoned and given instructions to fix these long lines and transfer issues with the ledger system. His new proposal was accepted by the council and lord and approved for execution.
+The new system worked in a way that by request to the Banker Rankin, any citizen could receive notes for the coins they owned. The ledger was updated to subtract the balance by the number of notes issued to a person. The paper note thus just a representation of the gold in the castle’s vault.
+Each member was encouraged to withdraw as many notes as needed for day to day transactions with the Banker Count Rankin signing these notes (to ensure legitimacy) and updating the ledger to ensure accuracy.
+Thus instead of carrying the gold coins citizens carried the much lighter paper note which could be exchanged for goods and services. The recipient on presenting the note back to Banker Rankin would be given the equivalent gold coins or the gold balance added to the kingdoms ledger.</p>
+
+<p>Citizens applauded the new system; it was very easy to carry lots of notes, trade, transact and when or if needed redeem the gold. Gold being used as the measure for value by other cities was a common way to trade between cities but news of the innovative light-paper based gold spread and neighboring cities also accepted Banker Rankins signed notes in-lieu of physical gold. And thus the once major gold based city to city trade was also being done using paper notes.</p>
+
+<p>Banker Count Rankin started to realize that that majority of his transactions were issuing notes and updating ledgers and very few people were actually depositing and withdrawing gold.. In fact he roughly estimated that 90% of the gold coins in the vault haven’t been touched since the paper system was implemented.</p>
+
+<p>After a bad year with droughts and an insect epidemic; Seemannus was devastated, his crops destroyed and he had no more notes and no produce to sell… He went to meet Rankin and begged him for some notes, Rankin refused since Seemannus ledger balance was 0; but after a lot of pleading, Seemannus had an idea. Since no one really is keeping count of the gold in the vault versus the paper notes he signed and issued and majority not even withdrawing gold, he can just issue Seemannus few notes for now in exchange for a higher sum that Seemanus has to return (the delta being the Banker Counts service charges for issuing these notes, interest he called it. Interest in your problems and paper notes the solution. The extra notes he figured he can destroy later. No one would know, he figured.</p>
+
+<p>Few others approached him with similar requests out of desperation and necessity ; all of which Rankins approved out of goodwill and greed.  Each promising to pay a little extra back as ‘interest’ which the banker kept for his interest in ‘your’ problem.</p>
+
+<p>Word of this system, “extra paper notes” spread and now people started approaching Rankin for extravagant things. [Some offering collateral (an expensive painting by Rotherhithe, the Lyln brothers cutlery sets and so on) in exchange for even extra paper notes for relaxed repayment terms which the banker readily accepted as he figured he can sell these items and recoup money if needed]. Sir Bertelot asked and received a few notes to help buy a newer better bred horse, his ledger balance now negative, and Maid Aledia asked for a few extra papers to help throw a better party for her sons wedding. Once in a lifetime she said.</p>
+
+<p>News of this spread and obviously reached Baron Sansum (now the highest paid council member for his successful finance models).</p>
+
+<p>Sansum immediately summoned the banker to review the ledger and found negative balances for many citizens and a large wealth acquired by the banker and slowly started to uncover the paper note issuing scheme.</p>
+
+<p>Escalating the matter and when explaining this to the Lord (and having the banker agreeing to give most of the “interest” earnings to the city), rather than being angry, the Lord was impressed. Everyone gets the benefit of paper note transactions, the ledger is securely managed and the city makes more money which they can use for everyones benefit. The only problem being the paper notes not equalling the gold stored in the vaults. Thats not a problem, explained Rankins; 90% of the gold has not been moved in the vault since we started issuing notes years ago.
+The banker also explained that since people borrowed paper money (that wasn’t backed by gold) to pay the money back plus interest; as a whole the citizens would need to borrow more paper money that would need to be issued or get gold from outside the city, so the system has to continue to ensure all interest payments are collected.</p>
+
+<p>Impressed but cautious, the lord instructed the banker to continue the interest based paper lending (the lord also added the idea of charging interest based on social standing, which the banker immediately implemented). The lord also issued an order soon after to the council members to maintain duplicate copies of the ledger including negative balances if any (the reasoning given was to ensure fire or a natural disaster doesn’t wipe out the ledger, but everyone understood that the reasoning was to double check the bankers work and to keep him honest. Each of the 7 council member updated their copy of the ledger on a weekly staggered basis; thus at any given night, two ledgers existed with the most up to date information. Only the council members, the lord and the banker were aware of the scheme, they didn’t want to scare the people with details they couldn’t understand anyway they figured.</p>
+
+<p>Lord Emeric Jeanin was estatic with the Hwen’s progress, in just a few years after he took over, everyone seemed more happier, everyone had what they wanted. He saw progress in his people building bigger houses, raising more chickens, drinking better (imported) wine, upgrading from wooden chairs to metal, fancier clothing (in fact he noticed Banker Count wearing fine silk embroidered with gold threads) and so on. Every citizen was happier, had more than what they needed and at the same time the city making extra money with the interest scheme.</p>
+
+<p>And then the problems started.</p>
+
+<p>The neighboring city (Myrefall)’s new lord wanted to issue their own notes and thus they were redeeming all their gold (held via Rankins issued papers); Rankin’s heart missed a couple of beats (shock and the excess food from past few years) when 20% of the vault’s gold was redeemed in a single day by Myrefalls council rep that was sent with six carts to collect and transport the gold.</p>
+
+<p>Adding to the issues, 2 years of failed crops and a severe drought kept Seemannus from paying his notes back, Sir Bertelot not able to keep up with all his four horses also was past due on his promises. Slowly for multiple reasons, many folks were not paying back the ‘paper money’ that they borrowed.
+Aledia started to realize she bit off more than she could chew and was struggling to pay back. The thought of heading to a neighboring cities to starting a new life did occur to her; but getting a ride on a trade cart also required paper notes which Rankin was started to get hesitant in issuing. Rumors of the fact that the bank could not support all gold redemption for the paper notes started floating around and one day over a quarter of the city lined up to withdraw their gold from the vault.</p>
+
+<p>Folks in the line holding notes that equalled half the gold in the vault, the bankers and council members were worried on the outcome when they run out of gold. But worried that not giving gold out might cause even more problems, started issuing gold slowly; the lord also came out to address the folks that everything is fine and not to worry. This seemed to satisfy most. Crisis averted for now they thought.</p>
+
+<p>Not wanting to go through this crisis again; the Lord asked Sansum for advise. Sansum after a long session of brainstorming with the council members came up with the idea of a new paper note. This paper note was the exact same in value, exchange worth, look and feel like the previous notes that Banker Rankins issued; the only difference being that this paper note could not be redeemed for gold. When asked by the lord why people should trust this piece of paper without gold redeeming features, it was explained that as long as the city associates and guarantees the same value to the notes as the old notes that could be redeemed for gold, as far as the people are concerned its the same thing.</p>
+
+<p>Majority of the people did not redeem their golds and people didn’t seem to care much about gold as long as the value of this paper note was guaranteed to be accepted anywhere in the city for the value of the previous note. People had faith that everyone would accept the new notes even though it has no intrinsic value (such as being tied to gold).
+Over few years the council members along with the Lord and the banker noticed that if they reduce the interest they were charging, people borrowed more and spent more and thus their city was booming and expanding rapidly and if they increase the interest rates, the borrowing slowed down and so did the spend and expansion speed. They thus determined that they can control the city’s progress based on how much or how little paper notes they printed.</p>
+
+<p>Well, if you survived this long in this story is exactly how modern banking started. This new note is what we call today Fiat currency; fiat from the latin term for ’as you wish’. It has various forms such as Dollar, Euros, Rupees (each issued by its governing country/body and the value guaranteed only by ‘trust’ and ‘faith’ and the value changing based on the demand and supply)
+Previously (like in our story), currency was made out of physical commodity (gold, silver coins etc) or printed paper money that could be redeemed for a specific amount of physical commodity. However, most modern paper currencies are fiat currencies that have zero value and primarily used for trades and settling payments. These cannot be redeemed for any physical commodity.</p>
+
+<p>Thus fiat currency is something controlled by governments/countries or a group of countries (like the EU) and can print as many or as little as they want. (this gives them control over the overall economy growth)</p>
+
+<p>The key issues with Fiat currency is hyperinflation (Imagine if our fictitious city keeps producing and issuing paper notes without any limits), people will lose trust and confidence in it and it’ll be perceived to have little/no value. Folks will start hoarding items they feel have value (gold, fuel, food, ); and prices start to rise rapidly and the city will have no choice but to issue more notes which exacerbates the problem. This could lead to people just going back to the good old system of bartering (I’ll give you 5 bags of rice for 2 chickens and ). Obviously there’s no reason for a government to intentionally devalue its currency, but they might have to if they borrowed too much and are in debt.</p>
+
+<p>Now that what a fiat system is clear, lets understand how trades and transfers take place. Imagine Jonas, a direct descendent of Knight Bertelot. A resident of New York city. He has a bank account and a few credit cards. This is how he spends his money.
+- Locally with his fiat currency (US dollars in this case) in exchange for goods/services.
+- Via his bank account using a checkbook (he writes a check promising to pay a vendor for a service, the vendor goes to his bank to deposit the check, the vendors bank contacts Jonas’s bank to ensure Jonas has the adequate money, they perform a bank transfer and deduct the sum from Jonas’s account balance and add it to the vendors).
+- Via a Visa debit card swiped at a vendors card reader. The vendors card reader terminal contacts Visa passing on the card details, visa then checks with the bank to confirms if Jonas has adequate money in his bank account, and instantly debits it from the account and credits the payment processor which then credits the vendors bank account minus a fee)
+- Via a credit card, using visa. Here visa (or the banking provider) gives a certain limit (based on trust and Jonas’s ability to pay back) which is used to make purchases and Jonas then pays the card provider back what they borrowed.</p>
+
+<p>Ignoring the local transaction, there’s a common theme in most transactions. It requires one or more third party (banks such as Chase or Bank of America, payment network providers such as Visa, MasterCard and payment processors such as square or stripe) to move your money from you to someone you wish to pay. And none of these middle men are doing that transfer for free. Visa processes 65,000 transactions every second (cited below) and all with the same fundamentals, they have a record of what you have or what your credit limit is, where you spend you money and how much more can you are able spend.</p>
+
+<p>A blockchain in its simplest description is basically a digital copy of Banker Count Rankin’s Ledger which contains the history of transactions and balances. It has the history of which accounts have what balances, what transactions occurred and when/if new “notes/currencies” were “printed”; who they belong to. With a single point in time, if you read the ledger/blockchain, you can follow a note all the way through its various transactions to the time it was created. Additionally, keep in mind that while we are talking about financial assets so far, a blockchain could be easily used for other assets too (Keeping a record for who owns which land, or keeping an account of vehicle ownerships etc). Easiest way to visualize a blockchain is to imagine a string of papers (or a chain); each paper recording transactions and updating balances and you keep adding more papers to this chain when new transactions occur.</p>
+
+<p>Obviously there are few key issues if this digital ledger (or blockchain) can be adopted beyond a small medieval city.</p>
+
+<p>Firstly, we do not want a central authority managing this digital ledger (so no Banker Count Rankin, the council members or Visa or Bank of America) and thus all users should be able to maintain their own copy so they know all the transactions and balances. Thus if Sir Bertelot wants to pay Aledia; Aledia can check her personal copy to see if the Knight has enough to pay. This distributed ‘ledger’ leads to needs such as
+a. Ensuring everyone updates their copy of the ledger after a transaction (To make sure Sir Bertelot doesn’t spend all this money on a new horse and then try to pay Aledia before Aledia has a chance to update her copy of the ledger to reflect Sir Bertelots balances [called double spending])
+b. Ensuring that there are no different versions of this ledger floating around and even if there are; easily determining which one is accurate. (Seemannus shouldn’t be able to update his copy of the ledger to increase his balances and try to pass that as the most accurate one)</p>
+
+<p>Secondly, in terms of currency; to start off the whole “no gold” system; Banker Rankin had to issue notes to the members (and the council members implemented a restriction on how many notes he can issues); in the U.S the federal reserve prints US dollar notes;  which as described earlier was backed by Gold, but as of a few decades ago, its just a piece of paper we trust (the government and the reserve deciding how many notes to print). In a distributed digital ledger/blockchain environment; as its not controlled by a single entity; there’s got to be consensus on who, how much and how often can create such assets.</p>
+
+<p>Lastly, there is a significant amount of work involved to update everyones copy of the ledger every time there’s a transaction (imagine if each time Aledia bought a coffee from moon-coins [later renamed to starbucks] everyone having to update their ledger) ; in the old days Banker Rankin was paid by the city to update his copy and he was making interest too; banks and payment networks charge anywhere from 0.5-5% in transaction fees to record a transaction. In a distributed environment; how can one incentivize everyone to ensure they update their copy of the ledger (the strength of the network is related to ensuring the validity and of ledgers and having a large number of these valid copies) and thus including a small fee for each transaction (transaction fee) might be a solution to ensure there’s incentive for folks to update their copy of the ledger.</p>
+
+<p>There are other issues to look out for; how long does it take for a single transaction (remember the long waiting lines?) to ‘clear’, how can Aledia store her money without her nosey drunk uncle knowing how much money she has (we need privacy if the ledger is fully distributed; right now only the bankers know what money you have in the account). Also while not a major problem in a small medieval city, for a global network, how does one prove that they are the rightful owners of the assets (stopping Seemannus from pretending to be the Knight) they are trying to spend.</p>
+
+<p>Cryptography, computer algorithms/programmes have been proposed and developed to solve for these key problems and offer innovative solutions. The first and the most popular being Bitcoin. Other cryptocurrencies such as Litecoin, Ethereum, Dash, Monero, IOTA etc all in essence solve these key problems and offer different sets of benefits and features for their users. You can navigate this site to review how each of these crypto currencies address these key problems in more detail. Or you can review the whitepapers for each of the currencies for exact technical specifications.</p>
+
+<p>The whole purpose of blockchain and associated cryptocurrencies is to ensure that two willing parties can transact and fulfill financial transactions without needing a trusted third party.
+To conclude this article, the key take away would be that Blockchain is a distributed ledger that is not controlled by a central authority but instead by all participating members and cryptocurrencies or other assets that are being managed/controlled by this Blockchain have a certain set of rules agreed by every participating member that directs how transactions are recorded, how trust is established to determine the correct copy of the blockchain, how and when new currency is issued and other rules required for the proper functioning of the network without the need of a third party or government.</p>
+
+<p>With the new digital age, technology advancement, global participation, collapsing banks (and this sites motto) you should be asking Why Trust Paper?</p>
+
+<p>Visa Transaction Volume : <a href="https://usa.visa.com/dam/VCOM/global/about-visa/documents/visa-facts-figures-jan-2017.pdf">https://usa.visa.com/dam/VCOM/global/about-visa/documents/visa-facts-figures-jan-2017.pdf</a>
+Bitcoin White paper : <a href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pdf</a></p>
+
+
+    
+    </div>
+    </div>
+</main>
+  <footer></footer>
+
+
+  <script src="/js/kube.js" type="text/javascript">
+  </script>
+  <script src="/js/kube.legenda.js" type="text/javascript">
+  </script>
+  <script src="/js/master.js" type="text/javascript">
+  </script>
+</body>
+
+</html>
