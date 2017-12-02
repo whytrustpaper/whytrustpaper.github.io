@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://whytrustpaper.com/blog/welcome/</loc>
+    <lastmod>2017-03-02T21:56:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/docs/my-new-doc/</loc>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/blog/</loc>
+    <lastmod>2017-03-02T21:56:55+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/company/</loc>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/docs/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/tags/example/</loc>
+    <lastmod>2017-03-02T21:56:55+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/categories/general/</loc>
+    <lastmod>2017-03-02T21:56:55+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/tags/markdown/</loc>
+    <lastmod>2017-03-02T21:56:55+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/tags/</loc>
+    <lastmod>2017-03-02T21:56:55+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://whytrustpaper.com/</loc>
+    <lastmod>2017-03-02T21:56:55+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
